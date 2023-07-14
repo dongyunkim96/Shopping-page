@@ -7,7 +7,7 @@ function ProductList({ bookmarkState, setBookmarkState }) {
 
     const checkIsBookmarked = (item) => {
         if (bookmarkState) {
-            return bookmarkState.some((e) -> e.id === item.id);
+            return bookmarkState.some((e) => e.id === item.id);
         }
         return false;
     };
