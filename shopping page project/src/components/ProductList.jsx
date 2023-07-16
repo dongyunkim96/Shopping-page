@@ -1,4 +1,5 @@
 import styles from "./ProductList.module.css";
+import Toast from "./UI/Details/Toast";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -34,7 +35,7 @@ function ProductList({ bookmarkState, setBookmarkState }) {
             <div className={styles.listWrapper}>
                 {data.map((item) => {
                     return (
-                        <item
+                        <Toast
                           key={item.id}
                           item={item}
                           isBookmarked={checkIsBookmarked(item)}
