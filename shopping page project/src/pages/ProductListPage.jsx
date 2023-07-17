@@ -78,7 +78,7 @@ function ProductListPage({ bookmarkState, setBookmarkState }) {
                 ))}
             </div>
             {isLoading && (
-                <div className={styles.loading}>
+                <div className={styles.ldsring}>
                     <div></div>
                     <div></div>
                     <div></div>
